@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>2000</width>
+    <height>1500</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>2000</width>
+    <height>1500</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="contextMenuPolicy">
+       <enum>Qt::CustomContextMenu</enum>
+      </property>
+      <property name="accessibleName">
+       <string>我的课程</string>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+      <widget class="QWidget" name="tab_viewSelected">
+       <property name="contextMenuPolicy">
+        <enum>Qt::CustomContextMenu</enum>
+       </property>
+       <attribute name="title">
+        <string>已选课程</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QPushButton" name="viewSelectedBtn">
+          <property name="text">
+           <string>刷新</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="tab_selected">
+          <column>
+           <property name="text">
+            <string>课程号</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>课程名称</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>教师</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_select">
+       <attribute name="title">
+        <string>自动抢课</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QWidget" name="widget_2" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QComboBox" name="comboBox">
+             <property name="minimumSize">
+              <size>
+               <width>200</width>
+               <height>30</height>
+              </size>
+             </property>
+             <item>
+              <property name="text">
+               <string>选择栏目</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>收藏</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>跨专业</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>通修</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>公共-导学/研讨/通识</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>公共-公选课</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_select">
+             <property name="text">
+              <string>请输入选择的课程:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_2">
+             <property name="minimumSize">
+              <size>
+               <width>500</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="clearButtonEnabled">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="viewBtn">
+             <property name="text">
+              <string>查看课程</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="selectBtn">
+             <property name="text">
+              <string>开始抢课</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="paussBtn">
+             <property name="text">
+              <string>暂停抢课</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="tab_show">
+          <column>
+           <property name="text">
+            <string>课程号</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>课程名称</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>课程教师</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>选课状态</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="show_label">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>楷体</family>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>[状态显示栏]</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_info">
+       <attribute name="title">
+        <string>使用说明</string>
+       </attribute>
+       <widget class="QTextBrowser" name="textBrowser">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>100</y>
+          <width>1681</width>
+          <height>1301</height>
+         </rect>
+        </property>
+        <property name="html">
+         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;h1 style=&quot; margin-top:18px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;说明文档&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-size:xx-large; font-weight:600;&quot;&gt;说&lt;/span&gt;&lt;span style=&quot; font-size:xx-large; font-weight:600;&quot;&gt;明文档&lt;/span&gt;&lt;/h1&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;欢迎使用&lt;span style=&quot; font-family:'Courier New';&quot;&gt;NJU_AutomaticCourseSelector&lt;/span&gt;!&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;目前仍处于测试阶段, 如存在bug敬请谅解, 同时欢迎联系作者(211850009@smail.nju.edu.cn)反馈.&lt;/p&gt;
+&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;使用方法&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-size:x-large; font-weight:600;&quot;&gt;使&lt;/span&gt;&lt;span style=&quot; font-size:x-large; font-weight:600;&quot;&gt;用方法: &lt;/span&gt;&lt;/h2&gt;
+&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot;&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;进入&lt;span style=&quot; font-family:'Courier New';&quot;&gt;已选课程&lt;/span&gt;页面, 查看你所有已选的课程&lt;/li&gt;
+&lt;li style=&quot;&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;进入&lt;span style=&quot; font-family:'Courier New';&quot;&gt;自动抢课&lt;/span&gt;页面, &lt;/li&gt;&lt;/ul&gt;
+&lt;ol style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 2;&quot;&gt;&lt;li style=&quot;&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;在下拉框中选择所要进入的栏目, (如果没有切换成功, 可以先切到另一个栏目再切回来)&lt;/li&gt;
+&lt;li style=&quot;&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;在框中输入想要搜索的课程的信息(&lt;span style=&quot; font-family:'Courier New';&quot;&gt;课程号&lt;/span&gt;/&lt;span style=&quot; font-family:'Courier New';&quot;&gt;课程名称&lt;/span&gt;/&lt;span style=&quot; font-family:'Courier New';&quot;&gt;任课老师&lt;/span&gt;), 点击&lt;span style=&quot; font-family:'Courier New';&quot;&gt;查看课程&lt;/span&gt;进行查看. 当然, 如果什么都不输入就点击查看的话, 会显示所有当前栏目下的课程&lt;/li&gt;
+&lt;li style=&quot;&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;在框中输入想要搜索的课程的信息(&lt;span style=&quot; font-family:'Courier New';&quot;&gt;课程号&lt;/span&gt;/&lt;span style=&quot; font-family:'Courier New';&quot;&gt;课程名称&lt;/span&gt;/&lt;span style=&quot; font-family:'Courier New';&quot;&gt;任课老师&lt;/span&gt;),点击&lt;span style=&quot; font-family:'Courier New';&quot;&gt;开始抢课&lt;/span&gt;进行自动抢课. 比较推荐的做法是在进行自动抢课之前, 先手动将需要选的课程添加&lt;span style=&quot; font-family:'Courier New';&quot;&gt;收藏&lt;/span&gt;, 然后进入&lt;span style=&quot; font-family:'Courier New';&quot;&gt;收藏&lt;/span&gt;栏目, 输入&lt;span style=&quot; font-family:'Courier New';&quot;&gt;一个空格&lt;/span&gt;, 点击自动抢课, 这样会循环对你收藏的课程进行抢课.&lt;/li&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:40px; margin-right:40px; -qt-block-indent:2; text-indent:0px;&quot;&gt;这时候你就只需要让程序跑着就行了.&lt;/p&gt;
+&lt;li style=&quot;&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;点击&lt;span style=&quot; font-family:'Courier New';&quot;&gt;暂停抢课&lt;/span&gt;来停止抢课, 可能会等待一段时间才会响应, 不行就多点几次(原因是目前未解决代码阻塞的问题) &lt;/li&gt;&lt;/ol&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:1; text-indent:0px;&quot;&gt;  &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt; &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
