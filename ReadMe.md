@@ -16,7 +16,7 @@
 - 实时查看当前的课程状态(已选课程/收藏课程)
 - 自动化抢课
 
-## feathers & plans
+## features & plans
 ### feathers implemented
 - 基于`selenium`的网络资源爬取 & 自动化操作
 - 基于`超级鹰验证码识别api`的模拟登录
