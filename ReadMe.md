@@ -1,3 +1,14 @@
+
+
+> [!Warning]
+> this repo is **no longer maintained**, and may not able to work as designed. But you can still refer to the implementation and create your own project.
+> 
+> 这个项目已经**停止维护**, ~~可能~~无法完成预设功能. 本项目代码仅供参考(电子骨灰盒, 留念😭)
+
+Although not recommended, if you still want to try it out, you may follow the code logic and modify the corresponding paths of the web elements according to the current webpage at https://xk.nju.edu.cn.
+
+尽管不推荐这么做(因为费时费力, 同时也不一定能work), 如果你仍然想尝试正常运行这份代码, 你可能需要根据现在的选课网页(的元素布局), 参考本项目的代码逻辑, 对抓取的相应网页元素的路径进行修改. 
+
 # Automatic Course Selector 选课平台补选抢课器
 
 ## Intro 
